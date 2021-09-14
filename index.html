@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2048</title>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<style type="text/css">
+		.container{
+			width: 815px;
+			height: 600px;
+			margin: auto;
+		}
+
+		#board{
+			width: 615px;
+			height: 600px;
+			border: 2px solid #ccc;
+			display: inline-block;
+		}
+		#info-box{
+			height: 100%;
+			background-color: #333;
+			float: right;
+			width: 190px;
+			border: 2px solid #ccc;
+			color: #fff;
+			text-align: center;
+			display: inline-block;
+		}
+
+		.row{
+			/*height:25%;	*/
+		}
+
+		.block{
+			/*width: 14.5%;*/
+			height: 98%;
+			display:inline-block;
+			background-color: #ccc;
+			margin:2px;
+		}
+
+		.number{
+			font-family: Charcoal, sans-serif;
+			font-weight: bold;
+			font-size: 200%;
+			color: #fff;
+			position: absolute;
+			align-items: center;
+			margin-left: 3.6%;
+			margin-top: 4%;
+
+		}
+		.abcls{
+			color:red;
+		}
+		#new_game{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+
+	}
+	.inputGrid{
+		height: 2rem;
+		width: 9rem;
+		border-radius: 5px;
+		border-width: 5px;;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="board" class="boardCls">
+			
+			
+		</div>
+		<div id="info-box">
+			<div class="moves">
+				<h2>Moves</h2>
+				<span id="total_moves">0</span>
+			</div>
+			
+			<hr>
+			
+			<div>
+				<h2>Info</h2>
+				<p>Use ← → ↑ ↓ keys</p>
+				<p>Make <b>2048</b></p>
+			</div>
+			<hr>
+			<div>
+				<button id="new_game" onclick="startNewGame();">Start New Game</button>
+			</div>
+			<hr>
+			<div>
+				<!--<input id="inputSizeGrid" class="inputGrid" placeholder="Choose Board Size" /> -->
+				<label for="inputGirdSizeLabel">Choose Board Size</label>
+				<select name="boards" class="inputGrid" id="inputSizeGrid">
+					<option value="4">4x4</option>
+					<option value="3">3x3</option>
+					<option value="5">5x5</option>
+					<option value="6">6x6</option>
+				</select>
+			</div>
+			<hr>
+			<div>
+				<h1>Game Status</h1>
+				<div id="status" style=" font-size: 18px; font-weight: bold;">
+					
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+</body>
+<script src = 'script.js'></script>
+</html>

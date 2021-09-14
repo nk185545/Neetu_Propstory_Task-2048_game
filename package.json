@@ -1,0 +1,11 @@
+{
+  "name": "2048_game",
+  "version": "1.0.0",
+  "description": "http://projects.psuresh.com.np/2048",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "neetu kumawat",
+  "license": "ISC"
+}
