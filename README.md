@@ -13,8 +13,8 @@ Step 3: And on pressing any of the arrow keys (up, down, left, right), you shoul
 Step 4: Put one 2 in any empty box randomly
 
 Step 5: The game is over when all boxes are filled.
-## Demo
-http://projects.psuresh.com.np/2048
+## Demo 
+https://nk185545.github.io/Neetu_Propstory_Task-2048_game/
 
 
 
